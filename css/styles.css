@@ -11,6 +11,7 @@
   --primary-bg-color: #4d5ae5;
   --cloud-color: #f4f4fd;
   --navy-blue: #2e2f42;
+  --light-slate: #8e8f99;
 }
 
 body {
@@ -710,6 +711,7 @@ a:hover {
 
 .backdrop-container {
   margin-bottom: 8px;
+  margin-bottom: 16px
 }
 
 .backdrop-label {
@@ -719,7 +721,7 @@ a:hover {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
- margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .backdrop-input-wrapper {
@@ -755,9 +757,6 @@ a:hover {
   fill: #4D5AE5;
 }
 
-.backdrop-wrapper-comment {
-  margin-top: 16px;
-}
 
 .comment-area {
   width: 100%;
@@ -779,3 +778,19 @@ a:hover {
   border-color: #4D5AE5;
 }
 
+.backdrop-comment {
+  margin-bottom: 16px
+}
+
+.comment-area::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+
+
+.backdrop-text-privacy{
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: var(--light-slate)
+}
