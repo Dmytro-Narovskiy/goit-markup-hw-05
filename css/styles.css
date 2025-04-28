@@ -808,7 +808,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  background-color: var(--primary-bg-color);
 }
 
 .privacy-link {
@@ -823,8 +822,8 @@ a:hover {
   border: none;
 }
 
-.backdrop-user-privacy:checked + .backdrop-text-privacy .custom-checkbox svg {
-  fill: var(--ocean);
+.backdrop-user-privacy:checked + .backdrop-text-privacy .custom-checkbox  {
+ fill: var(--cloud-color);
 }
 
 .btns-send {
@@ -849,4 +848,17 @@ a:hover {
   background-color: var(--primary-bg-color);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip:rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
