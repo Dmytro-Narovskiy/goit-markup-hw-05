@@ -808,6 +808,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  background-color: var(--primary-bg-color);
 }
 
 .privacy-link {
@@ -818,8 +819,12 @@ a:hover {
 }
 
 .backdrop-user-privacy:checked + .backdrop-text-privacy .custom-checkbox {
-  background-color: var(--ocean)
+  background-color: var(--ocean);
   border: none;
+}
+
+.backdrop-user-privacy:checked + .backdrop-text-privacy .custom-checkbox svg {
+  fill: var(--ocean);
 }
 
 .btns-send {
