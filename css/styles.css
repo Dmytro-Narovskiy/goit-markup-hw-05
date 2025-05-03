@@ -1,10 +1,26 @@
 /* base styles */
 .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Tablet styles */
+@media (min-width:768px) {
+  .container {
+  max-width: ;
+  padding:0 16px;
+  
+  }
+}
+
+/* Desktop styles */
+
+@media (min-width:1440px) {
+  .container {
+    max-width: 1128px;
+    
+  }
 }
 
 :root {
@@ -84,7 +100,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  /* margin-right: 76px; */
 }
 
 .header-nav-list {
@@ -162,7 +177,7 @@ a:hover {
   color: #404bbf;
 }
 
-/* main  */
+/* region main banner  */
 
 .main {
   text-align: center;
@@ -218,6 +233,8 @@ a:hover {
   background-color: #404bbf;
 }
 
+
+
 /* features */
 
 .features {
@@ -239,24 +256,30 @@ a:hover {
 
 .features-nav-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  max-width: 288px;
+  margin: 0 auto;
 }
 
 .features-nav-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  max-width: 288px;
+ 
 }
 
 .features-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.12;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .features-descr {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -265,12 +288,12 @@ a:hover {
 
 /* features-icons */
 .features-icon-wrap {
+  display: none;
   width: 264px;
   height: 112px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
-  display: flex;
   padding: 24px 100px;
   align-items: center;
   justify-content: center;
@@ -282,6 +305,8 @@ a:hover {
   height: 64px;
   fill: #2e2f42;
 }
+
+
 /* team */
 
 .team {
