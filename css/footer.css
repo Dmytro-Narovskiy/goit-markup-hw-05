@@ -75,7 +75,7 @@
 }
 
 .footer-subscribe-wrap {
-  margin-left: 80px;
+  margin-left: 83px;
 }
 
 .footer-subscribe-title {
@@ -104,11 +104,12 @@
   padding-left: 16px;
   border-radius: 4px;
   color: #ffffff;
+  transition: border-color 250ms;
 }
 
 .footer-email-input:hover,
 .footer-email-input:focus {
-  border: 1px solid var(--iris);
+  border: 1px solid var(--green);
 }
 
 ::placeholder {
@@ -130,6 +131,7 @@
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms;
 }
 
 .footer-btns-subscribe:hover,
