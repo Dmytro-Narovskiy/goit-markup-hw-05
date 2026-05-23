@@ -558,12 +558,31 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-wrap">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form name="subscribe-form" class="footer-form">
+            <label class="footer-label">
+              <input
+                class="footer-email-input"
+                type="email"
+                placeholder="E-mail"
+                name="subscribe-email"
+              />
+            </label>
+            <button class="footer-btns-subscribe" type="submit">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- #endregion footer -->
 
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop is-open"> -->
       <div class="modal">
         <button class="close-popup" type="button">
           <svg class="close-popup-icon" width="8" height="8">
@@ -626,7 +645,6 @@
           <div class="input-wrapper">
             <label for="form-comment" class="label-comment">Comment</label>
             <textarea
-              type="text"
               class="input-comment"
               id="form-comment"
               name="comment"
