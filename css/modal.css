@@ -39,6 +39,9 @@
 
 .close-popup {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 24px;
   right: 24px;
 
@@ -48,13 +51,11 @@
   cursor: pointer;
 
   border-radius: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: var(--cornflower);
-  fill: #2e2f42;
 
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -209,22 +210,29 @@
 }
 
 .submit-btn {
-  border-radius: 4px;
-  min-width: 169px;
-  min-height: 56px;
-  margin-left: 96px;
-  padding: 16px 32px;
+  text-align: center;
   cursor: pointer;
   border: none;
-  text-align: center;
+  border-radius: 4px;
+
+  min-width: 169px;
+  min-height: 56px;
+
+  margin-left: 96px;
+  padding: 16px 32px;
 
   font-weight: 500;
   font-size: 16px;
-
   line-height: 1.5;
   letter-spacing: 0.04em;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--iris);
   color: var(--white);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--ocean);
 }
